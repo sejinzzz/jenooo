@@ -28,8 +28,7 @@ header span{
     cursor: pointer;
 }
 section{
-    padding-top: 115px;
-    padding: 115px 25px 10px 25px;
+    padding: 110px 25px 10px 25px;
 }
 /* 사진 구역  */
 #content{
