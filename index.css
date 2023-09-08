@@ -20,7 +20,6 @@ header span{
     cursor: pointer;
 }
 /* 사진 구역  */
-/* 사진 구역  */
 #content{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3개의 칼럼으로 고정 */    gap: 10px;
