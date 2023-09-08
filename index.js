@@ -66,6 +66,17 @@ fileInput.addEventListener('change', () => {
     }
 });
 
+// RESET 버튼을 눌렀을 때 로컬 스토리지 초기화
+const resetButton = document.getElementById('resetButton');
+
+resetButton.addEventListener('click', () => {
+    localStorage.clear(); // 로컬 스토리지 초기화
+    images = []; // 이미지 배열 초기화
+    content.innerHTML = ''; // 내용 초기화
+    memories.textContent = 'MEMORY : 5MB'; // 메모리 정보 초기화
+});
+
+
 // 로컬 스토리지
 const storageLimit = (function() {
     try {
@@ -82,11 +93,16 @@ const storageLimit = (function() {
     }
 })();
 
-if (storageLimit) {
-    const availableSpace = (5 * 1024 * 1024); // 5MB로 가정
+if (typeof Storage !== 'undefined') { // 로컬 스토리지를 지원하는지 확인
+    const availableSpace = 5 * 1024 * 1024; // 5MB로 가정
     const usedSpace = JSON.stringify(localStorage).length;
-    const remainingSpace = availableSpace - usedSpace;
-    console.log('로컬 스토리지 용량 제한:', availableSpace, '사용 중인 용량:', usedSpace, '남은 용량:', remainingSpace);
+    const remainingSpaceInBytes = availableSpace - usedSpace;
+    const remainingSpaceInMegabytes = Math.round(remainingSpaceInBytes / (1024 * 1024)); // 바이트를 메가바이트로 변환 및 반올림
+    const memories = document.querySelector(".memories");
+
+    memories.textContent = 'MEMORY : ' + remainingSpaceInMegabytes + 'MB';
 } else {
     console.log('로컬 스토리지를 지원하지 않습니다.');
 }
+
+
