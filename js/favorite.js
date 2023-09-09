@@ -1,99 +1,97 @@
 let random_array  = []; // 랜덤을 뽑힌 이미지 배열
 let temp = []; // 내가 선택된 사진 배열들
 let images = [
-    "nct1.jpg",
-    "nct2.jpg",
-    "nct3.jpg",
-    "nct4.jpg",
-    "nct5.jpg",
-    "nct6.jpg",
-    "nct7.jpg",
-    "nct8.jpg",
-    "nct9.jpg",
-    "nct10.jpg",
-    "nct11.jpg",
-    "nct12.jpg",
-    "nct13.jpg",
-    "nct14.jpg",
-    "nct15.jpg",
-    "nct16.jpg",
-    "nct17.jpg",
-    "nct18.jpg",
-    "nct19.jpg",
-    "nct20.jpg",
-    "nct21.png",
-    "nct22.jpg",
-    "nct23.jpg",
-    "nct24.jpg",
-    "nct25.jpg",
-    "nct26.jpg",
-    "nct27.jpg",
-    "nct28.jpg",
-    "nct29.jpg",
-    "nct30.jpg",
-    "nct31.jpg",
-    "nct32.jpg",
-    "nct33.jpg",
-    "nct34.jpg",
-    "nct35.jpg",
-    "nct36.jpg",
-    "nct37.jpg",
-    "nct38.jpg",
-    "nct39.jpg",
-    "nct40.jpg"
+    { name : "쮜", fileName: "nct1.jpg"},
+    { name : "젠", fileName: "nct2.jpg"},
+    { name :  "젠맠", fileName: "nct3.jpg"},
+    { name : "젠", fileName: "nct4.jpg"},
+    { name : "젠", fileName: "nct5.jpg"},
+    { name : "젠", fileName: "nct6.jpg"},
+    { name : "젠", fileName: "nct7.jpg"},
+    { name : "젠", fileName: "nct8.jpg"},
+    { name : "젠", fileName: "nct9.jpg"},
+    { name : "젠", fileName: "nct10.jpg"},
+    { name : "쮜", fileName: "nct11.jpg"},
+    { name : "젠", fileName: "nct12.jpg"},
+    { name : "쮜", fileName: "nct13.jpg"},
+    { name : "해", fileName: "nct14.jpg"},
+    { name : "정", fileName: "nct15.jpg"},
+    { name : "정", fileName: "nct16.jpg"},
+    { name : "해", fileName: "nct17.jpg"},
+    { name : "젠", fileName: "nct18.jpg"},
+    { name : "맠", fileName: "nct19.jpg"},
+    { name : "잼", fileName: "nct20.jpg"},
+    { name : "쮜", fileName: "nct21.png"},
+    { name : "잼", fileName: "nct22.jpg"},
+    { name : "정", fileName: "nct23.jpg"},
+    { name : "해", fileName: "nct24.jpg"},
+    { name : "해", fileName: "nct25.jpg"},
+    { name : "쮜", fileName: "nct26.jpg"},
+    { name : "맠", fileName: "nct27.jpg"},
+    { name : "잼", fileName: "nct28.jpg"},
+    { name : "젠", fileName: "nct29.jpg"},
+    { name : "젠", fileName: "nct30.jpg"},
+    { name : "해", fileName: "nct31.jpg"},
+    { name : "런", fileName: "nct32.jpg"},
+    { name : "잼", fileName: "nct33.jpg"},
+    { name : "잼", fileName: "nct34.jpg"},
+    { name : "잼", fileName: "nct35.jpg"},
+    { name : "맠", fileName: "nct36.jpg"},
+    { name : "맠", fileName: "nct37.jpg"},
+    { name : "맠", fileName: "nct38.jpg"},
+    { name : "해", fileName: "nct39.jpg"},
+    { name : "잼", fileName: "nct40.jpg"},
+
+    
+    { name : "쥐", fileName: "nct41.jpg"},
+    { name : "쥐", fileName: "nct42.jpg"},
+    { name : "잼", fileName: "nct43.jpg"},
+    { name : "맠", fileName: "nct44.jpg"},
+    { name : "맠", fileName: "nct45.jpg"},
+    { name : "맠", fileName: "nct46.jpg"},
+    { name : "맠", fileName: "nct47.jpg"},
+    { name : "맠", fileName: "nct48.jpg"}
+
 ];
 while (random_array.length < 16) {
-    const randomIndex = Math.floor(Math.random() * images.length); // 20개 사진중 16개를 넣어줌
-    const randomImage = images.splice(randomIndex, 1)[0]; // 사진 배열에서 선택된 하나의 사진이 저장됨
-    if (random_array.indexOf(randomImage) === -1) {
-        random_array.push(randomImage); 
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const randomImage = images.splice(randomIndex, 1)[0];
+    if (!random_array.includes(randomImage)) {
+        random_array.push(randomImage);
     }
 }
 
-// 화면에 출력하기
-function img_print()
-{
-    $('.first_img').html(`<img src="images/${random_array[0]}">`);
-    $('.sec_img').html(`<img src="images/${random_array[1]}">`);
+function img_print() {
+    $('.first_img').html(`<img src="images/${random_array[0].fileName}">`);
+    $('.sec_img').html(`<img src="images/${random_array[1].fileName}">`);
 }
 img_print();
 
-// 사진 선택하기
-function check(select)
-{
+function check(select) {
     temp.push(random_array[select]);
     random_array.splice(0, 2);
-    if(random_array.length == 0){
-        //선택을 다시 할 수 있게 세팅을 해준다.
+    if (random_array.length == 0) {
         random_array = temp;
-        //랜덤 음식이 8개 남을 경우 문구를 바꾼다.
-        if(random_array.length == 8){
+        if (random_array.length == 8) {
             $(".score").text("8강");
-        }  
-        else if(random_array.length == 4){
+        } else if (random_array.length == 4) {
             $(".score").text("4강");
-        }
-        else if(random_array.length == 2){
+        } else if (random_array.length == 2) {
             $(".score").text("2강");
-        }
-        else if(random_array.length == 1){
-            console.log(temp);
+        } else if (random_array.length == 1) {
             $("section").html(`
                 <div class="winner">
-                    <img src="images/${temp[0]}" alt="우승자" />
+                    <img src="images/${temp[0].fileName}" alt="우승자" />
                 </div>
                 <div class="winner_info">
-                    <p>${temp}아~ ^^.❤</p>
+                    <p>${temp[0].name}프 이시군요 ^^.b 따봉</p>
                 </div>
             `);
         }
-        //선택한 값을 초기화해준다.
         temp = [];
     }
     img_print();
 }
-
-
 // random_array: 랜덤으로 선택된 이미지를 저장하는 배열입니다.
 // temp: 사용자가 선택한 이미지를 저장하는 배열입니다.
 // images: 가능한 이미지 목록이 있는 배열입니다.
