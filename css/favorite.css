@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+}
+header{
+    padding: 20px;
+    border-bottom: 1px solid #000;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+section{
+    margin: 50px 20px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+section .sub_title{
+    text-align: center;
+}
+section p{
+    font-family: 'SUITE-Regular';
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #000;
+    display: inline-block;
+}
+section .img_list{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+section .img_list span{
+    flex-basis: 50%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+section img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+/* 우승시  */
+.winner_info{
+    text-align: center;
+    padding: 20px 0;
+}
