@@ -41,8 +41,6 @@ let images = [
     { name : "맠", fileName: "nct38.jpg"},
     { name : "해", fileName: "nct39.jpg"},
     { name : "잼", fileName: "nct40.jpg"},
-
-    
     { name : "쥐", fileName: "nct41.jpg"},
     { name : "쥐", fileName: "nct42.jpg"},
     { name : "잼", fileName: "nct43.jpg"},
@@ -51,7 +49,6 @@ let images = [
     { name : "맠", fileName: "nct46.jpg"},
     { name : "맠", fileName: "nct47.jpg"},
     { name : "맠", fileName: "nct48.jpg"}
-
 ];
 while (random_array.length < 16) {
     const randomIndex = Math.floor(Math.random() * images.length);
@@ -84,7 +81,7 @@ function check(select) {
                     <img src="images/${temp[0].fileName}" alt="우승자" />
                 </div>
                 <div class="winner_info">
-                    <p>${temp[0].name}프 이시군요 ^^.b 따봉</p>
+                    <p><span>${temp[0].name}프</span> 이시군요 ^^.b 따봉</p>
                 </div>
             `);
         }

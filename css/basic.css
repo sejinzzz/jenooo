@@ -8,6 +8,16 @@
     list-style: none;
     text-decoration: none;
 }
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+}
 a{
     color: #000;
 }
