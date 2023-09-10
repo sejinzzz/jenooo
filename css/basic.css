@@ -26,6 +26,7 @@ select{
     -moz-appearance: none; 
     appearance: none;
     background: #fff;
+    color: #fff;
 }
 select::-ms-expand{
     display:none;
