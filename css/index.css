@@ -42,14 +42,12 @@ section img{
 }
 /* 우승시  */
 .winner {
-    margin-top: 20px;
     border-radius: 20px;
     overflow: hidden;
-    margin: 15px 5px;
+    margin: 15px 5px 10px 5px;
 }
 .winner_info{
     text-align: center;
-    padding: 10px 0;
 }
 .winner_info p{
     font-family: 'SUITE-Regular';
