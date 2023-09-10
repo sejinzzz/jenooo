@@ -3,14 +3,15 @@ let temp = []; // 내가 선택된 사진 배열들
 let images = [
     { name : "쮜", fileName: "nct1.jpg"},
     { name : "젠", fileName: "nct2.jpg"},
-    { name :  "젠맠", fileName: "nct3.jpg"},
+    { name : "젠", fileName: "nct3.jpg"},
     { name : "젠", fileName: "nct4.jpg"},
-    { name : "젠", fileName: "nct5.jpg"},
+    { name : "쮜", fileName: "nct5.jpg"},
     { name : "젠", fileName: "nct6.jpg"},
     { name : "젠", fileName: "nct7.jpg"},
     { name : "젠", fileName: "nct8.jpg"},
     { name : "젠", fileName: "nct9.jpg"},
     { name : "젠", fileName: "nct10.jpg"},
+
     { name : "젠", fileName: "nct11.jpg"},
     { name : "젠", fileName: "nct12.jpg"},
     { name : "쮜", fileName: "nct13.jpg"},
@@ -21,6 +22,7 @@ let images = [
     { name : "젠", fileName: "nct18.jpg"},
     { name : "맠", fileName: "nct19.jpg"},
     { name : "잼", fileName: "nct20.jpg"},
+
     { name : "쮜", fileName: "nct21.png"},
     { name : "잼", fileName: "nct22.jpg"},
     { name : "정", fileName: "nct23.jpg"},
@@ -31,6 +33,7 @@ let images = [
     { name : "잼", fileName: "nct28.jpg"},
     { name : "젠", fileName: "nct29.jpg"},
     { name : "젠", fileName: "nct30.jpg"},
+
     { name : "해", fileName: "nct31.jpg"},
     { name : "런", fileName: "nct32.jpg"},
     { name : "잼", fileName: "nct33.jpg"},
@@ -41,6 +44,7 @@ let images = [
     { name : "맠", fileName: "nct38.jpg"},
     { name : "해", fileName: "nct39.jpg"},
     { name : "잼", fileName: "nct40.jpg"},
+    
     { name : "쮜", fileName: "nct41.jpg"},
     { name : "쮜", fileName: "nct42.jpg"},
     { name : "잼", fileName: "nct43.jpg"},
@@ -48,7 +52,29 @@ let images = [
     { name : "맠", fileName: "nct45.jpg"},
     { name : "맠", fileName: "nct46.jpg"},
     { name : "맠", fileName: "nct47.jpg"},
-    { name : "맠", fileName: "nct48.jpg"}
+    { name : "맠", fileName: "nct48.jpg"},
+    { name : "정", fileName: "nct49.jpg"},
+    { name : "잼", fileName: "nct50.jpg"},
+
+    { name : "쮜", fileName: "nct51.jpg"},
+    { name : "런", fileName: "nct52.jpg"},
+    { name : "런", fileName: "nct53.jpg"},
+    { name : "잼", fileName: "nct54.jpg"},
+    { name : "해", fileName: "nct55.jpg"},
+    { name : "런", fileName: "nct56.jpg"},
+    { name : "해", fileName: "nct57.jpg"},
+    { name : "런", fileName: "nct58.jpg"},
+    { name : "맠", fileName: "nct59.jpg"},
+    { name : "잼", fileName: "nct60.jpg"},
+
+    { name : "쮜", fileName: "nct61.jpg"},
+    { name : "젠", fileName: "nct62.jpg"},
+    { name : "해", fileName: "nct63.jpg"},
+    { name : "잼", fileName: "nct64.jpg"},
+    { name : "해", fileName: "nct65.jpg"},
+    { name : "젠", fileName: "nct66.jpg"},
+    { name : "해", fileName: "nct67.jpg"}
+
 ];
 while (random_array.length < 16) {
     const randomIndex = Math.floor(Math.random() * images.length);

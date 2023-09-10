@@ -19,6 +19,7 @@ header select{
     border: none;
     padding: 10px;
     border-radius: 20px;
+    text-align: center;
     border: 2px solid #000;
 }
 select::-ms-expand{
