@@ -116,14 +116,6 @@ function check(select) {
     img_print();
 }
 
-$("#select").change(function() {
-    var selectedValue = $(this).val();
-    if (selectedValue === "dream") {
-      window.location.href = "index.html";
-    } else if (selectedValue === "nct") {
-      window.location.href = "golden_age.html";
-    }
-});
 // random_array: 랜덤으로 선택된 이미지를 저장하는 배열입니다.
 // temp: 사용자가 선택한 이미지를 저장하는 배열입니다.
 // images: 가능한 이미지 목록이 있는 배열입니다.

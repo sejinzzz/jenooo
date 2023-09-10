@@ -32,8 +32,8 @@ while (random_array.length < 20) {
 }
 
 function img_print() {
-    $('.first_img').html(`<img src="golden_age/${random_array[0].fileName}">`);
-    $('.sec_img').html(`<img src="golden_age/${random_array[1].fileName}">`);
+    $('.first_img').html(`<img src="nct/${random_array[0].fileName}">`);
+    $('.sec_img').html(`<img src="nct/${random_array[1].fileName}">`);
 }
 img_print();
 
@@ -45,7 +45,7 @@ function check(select) {
         if (random_array.length == 1) {
             $("section").html(`
                 <div class="winner">
-                    <img src="golden_age/${temp[0].fileName}" alt="우승자" />
+                    <img src="nct/${temp[0].fileName}" alt="우승자" />
                 </div>
                 <div class="winner_info">
                     <p><span>"${temp[0].name}"</span>맘에 드시는군요 ^^.b 따봉</p>
