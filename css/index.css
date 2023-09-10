@@ -13,10 +13,16 @@ header{
     font-family: 'Inter', sans-serif;
 }
 header select{
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none;
     border: none;
     padding: 10px;
     border-radius: 20px;
     border: 2px solid #000;
+}
+select::-ms-expand{
+display:none;
 }
 section{
     border-radius: 20px;
