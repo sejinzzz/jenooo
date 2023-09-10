@@ -21,4 +21,12 @@
 a{
     color: #000;
 }
-
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none;
+    background: #fff;
+}
+select::-ms-expand{
+    display:none;
+}
