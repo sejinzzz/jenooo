@@ -1,12 +1,22 @@
+body{
+    max-width: 800px;
+    margin: 0 auto;
+}
 header{
     padding: 20px;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
     font-size: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     font-family: 'Inter', sans-serif;
+}
+header select{
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #000;
 }
 section{
     border-radius: 20px;
