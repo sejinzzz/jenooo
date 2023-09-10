@@ -11,8 +11,6 @@ let images = [
     { name : "젠", fileName: "nct8.jpg"},
     { name : "젠", fileName: "nct9.jpg"},
     { name : "젠", fileName: "nct10.jpg"},
-
-
     { name : "젠", fileName: "nct11.jpg"},
     { name : "젠", fileName: "nct12.jpg"},
     { name : "쮜", fileName: "nct13.jpg"},
@@ -23,8 +21,6 @@ let images = [
     { name : "젠", fileName: "nct18.jpg"},
     { name : "맠", fileName: "nct19.jpg"},
     { name : "잼", fileName: "nct20.jpg"},
-
-
     { name : "쮜", fileName: "nct21.png"},
     { name : "잼", fileName: "nct22.jpg"},
     { name : "정", fileName: "nct23.jpg"},
@@ -35,8 +31,6 @@ let images = [
     { name : "잼", fileName: "nct28.jpg"},
     { name : "젠", fileName: "nct29.jpg"},
     { name : "젠", fileName: "nct30.jpg"},
-
-
     { name : "해", fileName: "nct31.jpg"},
     { name : "런", fileName: "nct32.jpg"},
     { name : "잼", fileName: "nct33.jpg"},
@@ -47,8 +41,6 @@ let images = [
     { name : "맠", fileName: "nct38.jpg"},
     { name : "해", fileName: "nct39.jpg"},
     { name : "잼", fileName: "nct40.jpg"},
-
-
     { name : "쮜", fileName: "nct41.jpg"},
     { name : "쮜", fileName: "nct42.jpg"},
     { name : "잼", fileName: "nct43.jpg"},

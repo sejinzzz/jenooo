@@ -9,7 +9,7 @@ header{
     font-family: 'Inter', sans-serif;
 }
 section{
-    padding: 7px;
+    padding: 40px 7px;
     border-radius: 20px;
 }
 section .sub_title{
@@ -23,7 +23,7 @@ section .sub_title p{
     display: inline-block;
 }
 section .img_list{
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     gap: 7px;
 }
